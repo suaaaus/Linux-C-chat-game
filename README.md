@@ -13,7 +13,8 @@ NewsJelly의 [Semantle-KO](https://semantle-ko.newsjel.ly/) 게임을 구현한 
 + 서버는 FastText 모델을 통해 단어 유사도와 순위를 계산하고, 추측 결과를 시각화합니다.
   
 
-<br>
+
+
 ## 📂 디렉터리 구조
 ```bash
 chat-semantle/
@@ -27,7 +28,9 @@ chat-semantle/
 │   └── cc.ko.300.bin            # FastText 한글 사전 모델 (6.8GB)
 ```
 
-<br>
+
+
+
 ## ⚙️ 설치 및 실행 (Setup & Run)
 **1. Python 유사도 서버 실행**
 ```bash
@@ -39,12 +42,14 @@ python3 check_similarity_tcp.py
 ```
   ⚠️ cc.ko.300.bin 파일은 FastText 공식(https://fasttext.cc/docs/en/crawl-vectors.html) 에서 다운로드
 
+
 **2. C 채팅/게임 서버 실행**
 ```bash
 cd c-app
 gcc game-server.c -o game-server
 ./game-server 6667
 ```
+
 
 **3. C 클라이언트 실행 (동일 LAN의 다른 기기에서 가능)**
 ```bash
@@ -53,7 +58,8 @@ gcc game-client.c -o semantle-client
 ```
 
 
-<br>
+
+
 ## 💡 사용법 (How to Use)
 서버에 접속하면 닉네임을 입력합니다.
 
@@ -75,7 +81,8 @@ gcc game-client.c -o semantle-client
   ```
 
 
-<br>
+
+
 ## 🎯 주요 기능 (Features)
 
 + FastText 유사도 계산 기반 순위 표시
