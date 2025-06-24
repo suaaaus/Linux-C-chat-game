@@ -29,7 +29,7 @@ chat-semantle/
 
 
 ## ⚙️ 설치 및 실행 (Setup & Run)
-1. Python 유사도 서버 실행
+**1. Python 유사도 서버 실행**
 ```bash
 cd python-model
 python3 -m venv myenv
@@ -37,20 +37,21 @@ source myenv/bin/activate
 pip install gensim
 python3 check_similarity_tcp.py
 ```
-⚠️ cc.ko.300.bin 파일은 FastText 공식(https://fasttext.cc/docs/en/crawl-vectors.html)에서 다운로드
+  ⚠️ cc.ko.300.bin 파일은 FastText 공식(https://fasttext.cc/docs/en/crawl-vectors.html) 에서 다운로드
 
-2. C 채팅/게임 서버 실행
+**2. C 채팅/게임 서버 실행**
 ```bash
 cd c-app
 gcc game-server.c -o game-server
 ./game-server 6667
 ```
 
-3. C 클라이언트 실행 (동일 LAN의 다른 기기에서 가능)
+**3. C 클라이언트 실행 (동일 LAN의 다른 기기에서 가능)**
 ```bash
 gcc game-client.c -o semantle-client
 ./semantle-client <서버_IP> 6667
 ```
+
 
 
 ## 💡 사용법 (How to Use)
@@ -74,6 +75,7 @@ gcc game-client.c -o semantle-client
   ```
 
 
+
 ## 🎯 주요 기능 (Features)
 
 + FastText 유사도 계산 기반 순위 표시
@@ -83,6 +85,7 @@ gcc game-client.c -o semantle-client
 + 정답 맞춘 사용자 전체 채팅방에 자동 알림
   
 + 닉네임 기반 입장/퇴장 알림 및 채팅
+
 
 
 ## 🔧 설정 변경 (Configuration)
