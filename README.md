@@ -1,14 +1,21 @@
 # 🧠 Semantle-KO Chat Game (C + Python)
 
+
 ## 📝 개요 (Introduction)
+
 **Python** 기반 FastText 유사도 계산 서비스와 **C** 언어 기반 TCP 소켓 다중 클라이언트 채팅 기능을 결합하여,
+
 NewsJelly의 [Semantle-KO](https://semantle-ko.newsjel.ly/) 게임을 구현한 네트워크 프로그램입니다.
 
+
 + 사용자는 실시간 채팅을 하며 /guess <단어> 또는 단축키로 정답을 추측할 수 있습니다.
+  
 + 서버는 FastText 모델을 통해 단어 유사도와 순위를 계산하고, 추측 결과를 시각화합니다.
+  
 
 
 ## 📂 디렉터리 구조
+```bash
 chat-semantle/
 ├── c-app/                      # C 기반 채팅 & 게임 클라이언트/서버
 │   ├── game-server.c         
@@ -18,6 +25,7 @@ chat-semantle/
 ├── python-model/                # Python 유사도 모델 서비스
 │   ├── check_similarity_tcp.py  # FastText 기반 TCP 유사도 서버
 │   └── cc.ko.300.bin            # FastText 한글 사전 모델 (6.8GB)
+```
 
 
 ## ⚙️ 설치 및 실행 (Setup & Run)
