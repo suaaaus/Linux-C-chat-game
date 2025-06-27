@@ -4,7 +4,7 @@ from gensim.models.fasttext import load_facebook_vectors
 MODEL_PATH = 'cc.ko.300.bin'   # 압축 해제한 .bin 파일
 
 # 여러 라운드를 위한 정답 리스트
-ANSWERS = ['통신', '바늘', '용도', '등장하다', '대화']
+ANSWERS = ['통신', '바늘', '용도', '등장하다', '대화']  # 정답 변경 가능
 current_index = 0
 
 def get_current_answer():
@@ -23,7 +23,7 @@ sock.listen(5)
 print(f"유사도 서비스 대기 중: {PORT}")
 print(f"[ROUND] 첫 번째 정답: '{get_current_answer()}'")
 
-# 메인 루프: 클라이언트 요청 처리
+# 클라이언트 요청 처리 루프
 while True:
     conn, addr = sock.accept()
     word = conn.recv(256).decode().strip()
