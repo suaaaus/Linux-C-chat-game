@@ -1,7 +1,7 @@
 # 🧠 Semantle-KO Chat Game (C + Python)
 
 
-## 📝 개요 (Introduction)
+## 📝 개요 
 
 **Python** 기반 FastText 유사도 계산 서비스와 **C** 언어 기반 TCP 소켓 다중 클라이언트 채팅 기능을 결합하여,
 
@@ -31,7 +31,7 @@ chat-semantle/
 
 
 
-## ⚙️ 설치 및 실행 (Setup & Run)
+## ⚙️ 설치 및 실행
 **1. Python 유사도 서버 실행**
 ```bash
 cd python-model
@@ -60,7 +60,7 @@ gcc game-client.c -o semantle-client
 
 
 
-## 💡 사용법 (How to Use)
+## 💡 사용법
 서버에 접속하면 닉네임을 입력합니다.
 
 일반 채팅 메시지를 입력하거나,
@@ -83,7 +83,7 @@ gcc game-client.c -o semantle-client
 
 
 
-## 🎯 주요 기능 (Features)
+## 🎯 주요 기능
 
 + FastText 유사도 계산 기반 순위 표시
   
